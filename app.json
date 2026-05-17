@@ -1,0 +1,176 @@
+{
+  "name": "CYBER-XMD",
+  "description": "Javascript WhatsApp bot made by CYBER-XMD",
+  "logo": "https://files.catbox.moe/6zd0ru.jpg",
+  "keywords": ["CYBER-XMD"],
+  "success_url": "/",
+  "stack": "container",
+  "env": {
+    "SESSION_ID": {
+      "description": "Put the session-id here. (Required)",
+      "required": true,
+      "value": ""
+    },
+    "PREFIX": {
+      "description": "Bot prefix (Default: .)",
+      "required": false,
+      "value": "."
+    },
+    "BOT_NAME": {
+      "description": "Your bot name (Default: CYBER-XMD)",
+      "required": false,
+      "value": "CYBER-XMD"
+    },
+    "MODE": {
+      "description": "Bot mode: public/private/inbox/groups (Default: private)",
+      "required": false,
+      "value": "public"
+    },
+    "OWNER_NUMBER": {
+      "description": "Owner WhatsApp number without + (Default: 923427582273)",
+      "required": false,
+      "value": "923427582273"
+    },
+    "OWNER_NAME": {
+      "description": "Owner name (Default: CYBER-XMD Owner)",
+      "required": false,
+      "value": "CYBER-XMD Owner"
+    },
+    "AUTO_REPLY": {
+      "description": "Auto reply to messages: true/false (Default: false)",
+      "required": false,
+      "value": "false"
+    },
+    "READ_MESSAGE": {
+      "description": "Auto read messages: true/false (Default: false)",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_REACT": {
+      "description": "Auto react to messages: true/false (Default: false)",
+      "required": false,
+      "value": "false"
+    },
+    "OWNER_REACT": {
+      "description": "Owner auto react: true/false (Default: false)",
+      "required": false,
+      "value": "false"
+    },
+    "ALWAYS_ONLINE": {
+      "description": "Always online mode: true/false (Default: false)",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_TYPING": {
+      "description": "Auto typing: true/false/inbox/group (Default: false)",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_RECORDING": {
+      "description": "Auto recording: true/false/inbox/group (Default: false)",
+      "required": false,
+      "value": "false"
+    },
+    "ANTI_LINK": {
+      "description": "Anti-link mode: true/warn/delete/false (Default: true)",
+      "required": false,
+      "value": "true"
+    },
+    "ANTI_DELETE": {
+      "description": "Anti delete: true/false (Default: true)",
+      "required": false,
+      "value": "true"
+    },
+    "ANTI_DELETE_PATH": {
+      "description": "Anti delete path: inbox/group/all (Default: inbox)",
+      "required": false,
+      "value": "inbox"
+    },
+    "ANTI_EDIT": {
+      "description": "Anti edit: true/false (Default: false)",
+      "required": false,
+      "value": "false"
+    },
+    "ANTIEDIT_PATH": {
+      "description": "Anti edit path: inbox/group/all (Default: inbox)",
+      "required": false,
+      "value": "inbox"
+    },
+    "ANTI_CALL": {
+      "description": "Anti call: true/false (Default: false)",
+      "required": false,
+      "value": "false"
+    },
+    "REJECT_MSG": {
+      "description": "Call reject message",
+      "required": false,
+      "value": "*\ud83d\udcde Call not allowed on this number \u2014 CYBER-XMD is active \ud83d\udcf5*"
+    },
+    "AUTO_STATUS_SEEN": {
+      "description": "Auto view status: true/false (Default: true)",
+      "required": false,
+      "value": "true"
+    },
+    "REACT_EMOJIS": {
+      "description": "Reaction emojis (comma-separated)",
+      "required": false,
+      "value": "\u2764\ufe0f,\ud83d\udd25,\ud83d\udc4d,\ud83d\ude0d,\ud83d\ude02,\ud83d\ude2e,\ud83d\ude0e,\ud83e\udd70,\ud83d\udc4b,\ud83e\udd1d,\ud83d\udcaf,\u2728,\u2b50,\ud83c\udf89,\ud83e\udd17,\ud83d\ude0a,\ud83d\ude4c,\ud83d\udcaa,\ud83d\udc4f,\u2705,\ud83c\udf88,\ud83c\udf8a,\ud83c\udfc6,\u26a1,\ud83d\udcab,\ud83d\udc4c,\ud83e\udd19,\ud83d\udc96,\ud83d\udc95,\ud83d\udc97,\ud83d\udc51,\ud83d\udcce,\ud83c\udf1f,\ud83c\udfaf,\ud83c\udfa8,\ud83c\udfad,\ud83c\udfaa,\ud83c\udfa2,\ud83c\udfa1,\ud83c\udfa0"
+    },
+    "OWNER_EMOJIS": {
+      "description": "Owner reaction emojis (comma-separated)",
+      "required": false,
+      "value": "\ud83d\udc51,\ud83d\udcce,\u2b50,\u2728,\ud83d\udd25,\ud83d\udcaf,\u2705,\ud83c\udf89,\ud83e\udd16,\u26a1,\ud83d\udcab,\ud83c\udf1f,\ud83c\udfc6,\ud83d\udc7e,\ud83d\ude80,\ud83d\udcaa,\ud83c\udfaf,\ud83d\udd31,\u267e\ufe0f,\u269c\ufe0f"
+    },
+    "WELCOME": {
+      "description": "Welcome messages: true/false (Default: false)",
+      "required": false,
+      "value": "false"
+    },
+    "GOODBYE": {
+      "description": "Goodbye messages: true/false (Default: false)",
+      "required": false,
+      "value": "false"
+    },
+    "MENTION_REPLY": {
+      "description": "Mention reply mode: true/note/reply/notify/false (Default: false)",
+      "required": false,
+      "value": "false"
+    },
+    "WELCOME_MESSAGE": {
+      "description": "Welcome message with placeholders: @user, @group, @desc, @count, @bot, @time",
+      "required": false,
+      "value": "*_@user joined the group, welcome! \ud83c\udf89_*\n*\u26a1 Powered by CYBER-XMD*"
+    },
+    "GOODBYE_MESSAGE": {
+      "description": "Goodbye message with placeholders: @user, @group, @desc, @count, @bot, @time",
+      "required": false,
+      "value": "*_@user has left the group, we will miss them! \ud83d\udc4b_*\n*\u26a1 Powered by CYBER-XMD*"
+    },
+    "BOT_MEDIA_URL": {
+      "description": "Bot media URL",
+      "required": false,
+      "value": "https://files.catbox.moe/6zd0ru.jpg"
+    },
+    "AUTO_DOWNLOADER": {
+      "description": "Auto downloader: true/false (Default: false)",
+      "required": false,
+      "value": "false"
+    },
+    "ADMIN_ACTION": {
+      "description": "Admin action notifications: true/false (Default: false)",
+      "required": false,
+      "value": "false"
+    },
+    "DESCRIPTION": {
+      "description": "Bot description",
+      "required": false,
+      "value": "*\u26a1 Powered by CYBER-XMD*"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs.git"
+    }
+  ],
+  "stack": "heroku-24"
+}
